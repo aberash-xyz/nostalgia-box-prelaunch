@@ -55,6 +55,7 @@
 		font-family: "Noto Sans";
 		margin-top: 22px;
 		width: 100%;
+		border-radius: 0;
 	}
 	button:disabled {
 		opacity: 0.4;
