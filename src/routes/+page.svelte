@@ -71,91 +71,91 @@
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-Black.woff') format('woff');
+      src: url('/NotoSans-Black.woff') format('woff');
       font-weight: 900;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSansBlackItalic.woff') format('woff');
+      src: url('/NotoSansBlackItalic.woff') format('woff');
       font-weight: 900;
       font-style: italic;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-Bold.woff') format('woff');
+      src: url('/NotoSans-Bold.woff') format('woff');
       font-weight: 700;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-BoldItalic.woff') format('woff');
+      src: url('/NotoSans-BoldItalic.woff') format('woff');
       font-weight: 700;
       font-style: italic;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-ExtraBold.woff') format('woff');
+      src: url('/NotoSans-ExtraBold.woff') format('woff');
       font-weight: 800;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-ExtraBoldItalic.woff') format('woff');
+      src: url('/NotoSans-ExtraBoldItalic.woff') format('woff');
       font-weight: 800;
       font-style: italic;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-MediumItalic.woff') format('woff');
+      src: url('/NotoSans-MediumItalic.woff') format('woff');
       font-weight: 500;
       font-style: italic;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-Regular.woff') format('woff');
+      src: url('/NotoSans-Regular.woff') format('woff');
       font-weight: 400;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-SemiBold.woff') format('woff');
+      src: url('/NotoSans-SemiBold.woff') format('woff');
       font-weight: 600;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-SemiBoldItalic.woff') format('woff');
+      src: url('/NotoSans-SemiBoldItalic.woff') format('woff');
       font-weight: 600;
       font-style: italic;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-Thin.woff') format('woff');
+      src: url('/NotoSans-Thin.woff') format('woff');
       font-weight: 100;
       font-style: normal;
     }
 
     @font-face {
       font-family: 'Noto Sans';
-      src: url('NotoSans-ThinItalic.woff') format('woff');
+      src: url('/NotoSans-ThinItalic.woff') format('woff');
       font-weight: 100;
       font-style: italic;
     }
 
     @font-face {
         font-family: "Pillow Lava";
-        src: url('Pilowlava-Regular.woff') format('woff');
+        src: url('/Pilowlava-Regular.woff') format('woff');
         font-weight: 600;
         font-style: normal;
     }
