@@ -16,8 +16,7 @@
 	<h3 class="title"> Join our email list </h3>
 	<input type="text" placeholder="Full Name" name="name" required
 		pattern="[A-Za-z ]+"/>
-	<input type="email" placeholder="Email" name="email" required
-		pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+	<input type="email" placeholder="Email" name="email" required>
 	<button disabled={loading || success} type="submit"> {loading ? "Submitting..." : "Receive updates!"} </button>
 	<p class={success ? "visible": "hidden"}> Form submitted successfuly!</p>
 </form>
