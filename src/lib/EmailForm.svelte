@@ -43,6 +43,8 @@
 		margin: 8px 0;
 		font-family: "Noto Sans";
 		background: transparent;
+		-webkit-border-radius: 0;
+		-webkit-appearance:none;
 	}
 
 	button {
