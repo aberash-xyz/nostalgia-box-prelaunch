@@ -162,7 +162,6 @@
 		})
 		const mesh = new THREE.Mesh(geometry, material)
 		scene.add(mesh)
-
 		/**
 		 * Sizes
 		 */
@@ -176,6 +175,8 @@
 		    // Update sizes
 		    sizes.width = window.innerWidth
 		    sizes.height = window.innerHeight
+
+		    setCameraDistance();
 
 		    // Update camera
 		    camera.aspect = sizes.width / sizes.height
@@ -191,7 +192,15 @@
 		 */
 		// Base camera
 		const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-		camera.position.set(0, 0, 1.05)
+
+		const setCameraDistance = () => {
+			if (sizes.width < 800) {
+		    	camera.position.set(-1.35,0,0.1);
+		    } else {
+		    	camera.position.set(0,0,1.05);
+		    }
+		}
+		setCameraDistance()
 		scene.add(camera)
 
 		// Controls
@@ -234,7 +243,7 @@
 		    window.requestAnimationFrame(tick)
 		}
 
-tick()
+		tick()
 	})
 </script>
 
@@ -258,8 +267,11 @@ tick()
 
 	@media(max-width: 800px) {
 		.canvas {
-			height: 60%;
-			width: 60%;
+			height: 50%;
+			width: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 		}
 	}
 </style>

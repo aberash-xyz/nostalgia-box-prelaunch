@@ -115,10 +115,10 @@
         .hero {
             height: auto;
             width: 90%;
-            left: auto;
+            left: 50%;
             font-family: "Pillow Lava";
             font-size: 7rem;
-            transform: translateY(-30%);
+            transform: translate(-50%, -50%);
             align-self: center;
             text-align: center;
             overflow-wrap: anywhere;
@@ -126,18 +126,19 @@
 
          .form {
             position: absolute;
-            top: 50px;
+            top: 30px;
             align-self: center;
             background-color: rgba(255,255,255,0.3);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 8px;
-            height: 140px;
+            height: 120px;
             overflow: hidden;
             display: flex;
         }
 
         .sub {
+            bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
         }

@@ -75,4 +75,10 @@
 		font-weight: 600;
 		text-transform: capitalize;
 	}
+
+	@media(max-width: 800px) {
+		.input, button, form {
+			text-align: center;
+		}
+	}
 </style>
