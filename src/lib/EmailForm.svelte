@@ -13,50 +13,48 @@
 		loading = false
 	}
 }}>
-	<h3 class="title"> Join our email list </h3>
-	<input type="text" placeholder="Full Name" name="name" required
+	<!-- <h3 class="title"> Join our email list </h3> -->
+	<input type="text" placeholder="// Name" name="name" required
 		pattern="[A-Za-z ]+"/>
-	<input type="email" placeholder="Email" name="email" required>
-	<button disabled={loading || success} type="submit"> {loading ? "Submitting..." : "Receive updates!"} </button>
+	<input type="email" placeholder="// Email" name="email" required>
+	<button disabled={loading || success} type="submit"> {loading ? "Submitting..." : " Receive updates! "} </button>
 	<p class={success ? "visible": "hidden"}> Form submitted successfuly!</p>
 </form>
 
 <style type="text/css">
 	form {
 		margin: auto;
-		width: 75%;
-		max-width: 260px;
+		width: 250px;
 		height: auto;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		font-family: "Noto Sans";
 		background: transparent;
 	}
 
 	input {
-		padding: 8px 2px;
+		padding: 4px 2px;
 		width: 100%;
 		border: none;
-		border-bottom: 1px rgba(0,0,0,0.2) solid;
-		margin: 8px 0;
+		margin: 4px 0;
 		font-family: "Noto Sans";
 		background: transparent;
 		-webkit-border-radius: 0;
 		-webkit-appearance:none;
+		outline: none;
 	}
 
 	button {
 		border: none;
-		background: black;
-		color: white;
-		padding: 17px 56px;
+		background: none;
+		color: black;
+		padding: 14px 4px;
 		font-size: 14px;
 		font-family: "Noto Sans";
-		margin-top: 22px;
+		font-weight: 600;
 		width: 100%;
 		border-radius: 0;
+		text-decoration: underline;
+		cursor: pointer;
+		text-align: left;
 	}
 	button:disabled {
 		opacity: 0.4;
