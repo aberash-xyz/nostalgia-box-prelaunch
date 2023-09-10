@@ -108,7 +108,7 @@
 
      @media(max-width: 800px) {
         .container {
-            height: 90%;
+            height: 92.5%;
             top: 50%;
             transform: translateY(-50%);
         }
