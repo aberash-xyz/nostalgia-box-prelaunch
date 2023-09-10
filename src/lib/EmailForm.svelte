@@ -157,6 +157,7 @@
 	@media(max-width: 800px) {
 		input {
 			margin-bottom: 1.2rem;
+			font-size: 16px;
 		}
 		.submit-button {
 			width: 100%;

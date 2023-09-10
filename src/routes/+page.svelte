@@ -107,6 +107,11 @@
      }
 
      @media(max-width: 800px) {
+        .container {
+            height: 90%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
         .brand {
             mix-blend-mode: difference;
             font-size: 36px;
