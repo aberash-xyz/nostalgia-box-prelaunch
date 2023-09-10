@@ -92,7 +92,7 @@
         left: 50px;
         font-weight: normal;
         font-family: "Noto Sans";
-        font-size: 1.2rem;
+        font-size: 1.4rem;
      }
 
     h4 {
@@ -128,11 +128,13 @@
             position: absolute;
             top: 30px;
             align-self: center;
-            background-color: rgba(255,255,255,0.3);
+/*            background-color: rgba(255,255,255,0.3);*/
+            right: 50%;
+            transform: translateX(50%);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 8px;
-            height: 120px;
+            height: auto;
             overflow: hidden;
             display: flex;
         }
@@ -147,6 +149,11 @@
      @media(max-width: 370px) {
         .hero {
             font-size: 7rem;
+        }
+
+        .form {
+            right: 50%;
+            transform: translateX(50%);
         }
      }
 

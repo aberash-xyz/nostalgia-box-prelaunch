@@ -1,25 +1,73 @@
 <script type="module">
 	import { enhance } from '$app/forms';
+	import { onMount } from "svelte"
 	let success = false;
 	let loading = false;
+	let isSmall = false;
+	let dialog;
+
+	onMount(_ => {
+		if (document.body.clientWidth < 800) {
+			isSmall = true;
+			return
+		}
+		isSmall = false;
+	})
+
+	const showDialog = () => {
+		if (!dialog) findModal();
+		dialog.showModal()
+	}
+	const closeDialog = () => {
+		if (!dialog) findModal();
+		dialog.close()
+	}
+	const findModal = () => {
+		dialog = document.querySelector('.modal');
+	}
 </script>
 
-<form method="POST" use:enhance={(cancel) => {
-	loading = true
-	return async ({ result, update}) => {
-		if (result.type == "success") {
-			success = true
-		}
-		loading = false
-	}
-}}>
 	<!-- <h3 class="title"> Join our email list </h3> -->
-	<input type="text" placeholder="// Name" name="name" required
-		pattern="[A-Za-z ]+"/>
-	<input type="email" placeholder="// Email" name="email" required>
-	<button disabled={loading || success} type="submit"> {loading ? "Submitting..." : " Receive updates! "} </button>
-	<p class={success ? "visible": "hidden"}> Form submitted successfuly!</p>
-</form>
+	{#if isSmall}
+	<div class="modal-container">
+		<dialog class="modal">
+			<form method="POST" use:enhance={(cancel) => {
+				loading = true
+				return async ({ result, update}) => {
+					if (result.type == "success") {
+						success = true
+					}
+					loading = false
+				}
+			}}>
+			<input type="text" placeholder="// Name" name="name" required
+				pattern="[A-Za-z ]+"/>
+			<input type="email" placeholder="// Email" name="email" required>
+			<button class="submit-button" disabled={loading || success} type="submit"> {loading ? "Submitting..." : " Submit! "} </button>
+			<p class={success ? "visible": "hidden"}> Form submitted successfuly!</p>
+			<button on:click={closeDialog} type="button" class="close-button">-- Close --</button>
+			</form>
+		</dialog>
+		<button class="open-modal-btn" on:click={showDialog}>Receive Updates!</button>
+	</div>
+
+	{:else}
+	<form method="POST" use:enhance={(cancel) => {
+		loading = true
+		return async ({ result, update}) => {
+			if (result.type == "success") {
+				success = true
+			}
+			loading = false
+		}
+	}}>
+		<input type="text" placeholder="// Name" name="name" required
+			pattern="[A-Za-z ]+"/>
+		<input type="email" placeholder="// Email" name="email" required>
+		<button class="submit-button" disabled={loading || success} type="submit"> {loading ? "Submitting..." : " Receive Updates! "} </button>
+		<p class={success ? "visible": "hidden"}> Form submitted successfuly!</p>
+	</form>
+	{/if}
 
 <style type="text/css">
 	form {
@@ -42,7 +90,7 @@
 		outline: none;
 	}
 
-	button {
+	.submit-button {
 		border: none;
 		background: none;
 		color: black;
@@ -54,9 +102,9 @@
 		border-radius: 0;
 		text-decoration: underline;
 		cursor: pointer;
-		text-align: left;
+		text-align: center;
 	}
-	button:disabled {
+	.submit-button:disabled {
 		opacity: 0.4;
 		cursor: not-allowed;
 	}
@@ -64,6 +112,36 @@
 		font-size: 12px;
 		margin-top: 12px;
 		color: rgba(0, 0, 0, 0.6);
+	}
+
+	.close-button {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+		border: none;
+		background: none;
+		color: black;
+		font-size: 14px;
+		font-family: "Noto Sans";
+	}
+
+	.open-modal-btn {
+		background: none;
+		border: none;
+		color: black;
+		text-decoration: underline;
+		font-weight: 600;
+		font-family: "Noto Sans";
+		line-height: 3.2rem;
+	}
+	.modal {
+		padding: 3.2rem 1.6rem 1.6rem 1.6rem;
+		border: none;
+		width: 80%;
+		max-width: 340px;
+		border-radius: 2.6rem;
+		background-color: rgba(255,255,255,0.5);
+		backdrop-filter: blur(30px);
 	}
 	.hidden {
 		visibility: hidden;
@@ -77,8 +155,11 @@
 	}
 
 	@media(max-width: 800px) {
-		.input, button, form {
-			text-align: center;
+		input {
+			margin-bottom: 1.2rem;
+		}
+		.submit-button {
+			width: 100%;
 		}
 	}
 </style>
