@@ -102,7 +102,7 @@
 		border-radius: 0;
 		text-decoration: underline;
 		cursor: pointer;
-		text-align: center;
+		text-align: left;
 	}
 	.submit-button:disabled {
 		opacity: 0.4;
