@@ -89,6 +89,9 @@
 		-webkit-appearance:none;
 		outline: none;
 	}
+	input::placeholder {
+		color: rgba(0,0,0,0.9);
+	}
 
 	.submit-button {
 		border: none;
@@ -146,6 +149,7 @@
 		border-radius: 2.6rem;
 		background-color: rgba(255,255,255,0.4);
 		backdrop-filter: blur(30px);
+		-webkit-backdrop-filter: blur(30px);
 	}
 	.hidden {
 		visibility: hidden;
