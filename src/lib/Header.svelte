@@ -38,6 +38,9 @@
 
 
 <style>
+	li {
+		text-align: center;
+	}
 	.my-header {
 		position: absolute;
 		z-index: 100000;
@@ -73,7 +76,6 @@
 	@media (max-width: 800px) {
 		.link-list {
 			font-size: 2.8rem;
-			padding: 0;
 		}
 	}
 </style>
