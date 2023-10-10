@@ -46,6 +46,8 @@
 		z-index: 100000;
 		padding: 2.4rem;
 		width: 100%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.link-list {
 		font-family: "Ostrich Sans";
@@ -74,8 +76,33 @@
 		transform: translateY(-100%);
 	}
 	@media (max-width: 800px) {
+		.my-header {
+			padding-top: 4.2rem;
+		}
 		.link-list {
 			font-size: 2.8rem;
+			padding: 0;
+			list-style: none;
+		}
+		.link {
+			min-width: 12rem;
+		}
+		.link-list {
+/*			gap: 2rem;*/
+		}
+		li {
+			position: absolute;
+		}
+		li:nth-child(1) {
+			left: 10%;
+		}
+		li:nth-child(2) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		li:nth-child(3) {
+			left: 90%;
+			transform: translateX(-100%);
 		}
 	}
 </style>
