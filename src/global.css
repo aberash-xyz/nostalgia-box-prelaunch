@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media(max-width: 800px) {
+  html,body {
+    font-size: 62.5%;
+  }
+}
+
+@media(max-width: 500px) {
+  html, body {
+    font-size: 40%;
+  }
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSansBlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/NotoSans-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: "Pillow Lava";
+    src: url('/Pilowlava-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Ostrich Sans";
+  src: url('/OstrichSans-Heavy.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}

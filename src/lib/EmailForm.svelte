@@ -3,16 +3,16 @@
 	import { onMount } from "svelte"
 	let success = false;
 	let loading = false;
-	let isSmall = false;
+	let isSmall = true;
 	let dialog;
 
-	onMount(_ => {
-		if (document.body.clientWidth < 800) {
-			isSmall = true;
-			return
-		}
-		isSmall = false;
-	})
+	// onMount(_ => {
+	// 	if (document.body.clientWidth < 800) {
+	// 		isSmall = true;
+	// 		return
+	// 	}
+	// 	isSmall = false;
+	// })
 
 	const showDialog = () => {
 		if (!dialog) findModal();
@@ -79,7 +79,7 @@
 	}
 
 	input {
-		padding: 4px 2px;
+		padding: 2.4rem 0rem;
 		width: 100%;
 		border: none;
 		margin: 4px 0;
@@ -102,7 +102,8 @@
 		border-radius: 0;
 		text-decoration: underline;
 		cursor: pointer;
-		text-align: left;
+		margin-top: 2.4rem;
+		text-align: center;
 	}
 	.submit-button:disabled {
 		opacity: 0.4;
@@ -123,6 +124,7 @@
 		color: black;
 		font-size: 14px;
 		font-family: "Noto Sans";
+		cursor: pointer;
 	}
 
 	.open-modal-btn {
@@ -133,6 +135,8 @@
 		font-weight: 600;
 		font-family: "Noto Sans";
 		line-height: 3.2rem;
+		opacity: 0;
+		visibility: hidden;
 	}
 	.modal {
 		padding: 3.2rem 1.6rem 1.6rem 1.6rem;
@@ -140,7 +144,7 @@
 		width: 80%;
 		max-width: 340px;
 		border-radius: 2.6rem;
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255,0.4);
 		backdrop-filter: blur(30px);
 	}
 	.hidden {

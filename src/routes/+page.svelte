@@ -2,20 +2,18 @@
     import VerticalText from "$lib/VerticalText.svelte"
     import CoverImage from "$lib/CoverImage.svelte"
     import THREECIRCLE from "$lib/THREECIRCLE.svelte"
-
-    import EmailForm from "$lib/EmailForm.svelte"
 </script>
 
 <div class="container">
-    <div class="form">
+    <!-- <div class="form">
         <EmailForm />
-    </div>
+    </div> -->
 
     <h1 class="hero"> Nostalgia <br /> Box </h1>
 
     <THREECIRCLE />
 
-    <p class="sub"> // Something's Cooking </p>
+    <p class="sub">© Aberash. 2023</p>
 
 </div>
 
@@ -26,6 +24,7 @@
         height: 100%;
         width: 100%;
         position: relative;
+        overflow: hidden;
     }
     .grid-container { 
         height: calc(100vh - 20px);
@@ -89,10 +88,12 @@
      .sub {
         position: absolute;
         bottom: 50px;
-        left: 50px;
+        left: 50%;
         font-weight: normal;
-        font-family: "Noto Sans";
-        font-size: 1.4rem;
+        font-family: "Ostrich Sans";
+        font-size: 1.6rem;
+        transform: translateX(-50%);
+        color: rgba(0,0,0,0.6);
      }
 
     h4 {
@@ -161,96 +162,4 @@
             transform: translateX(50%);
         }
      }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-Black.woff') format('woff');
-      font-weight: 900;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSansBlackItalic.woff') format('woff');
-      font-weight: 900;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-Bold.woff') format('woff');
-      font-weight: 700;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-BoldItalic.woff') format('woff');
-      font-weight: 700;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-ExtraBold.woff') format('woff');
-      font-weight: 800;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-ExtraBoldItalic.woff') format('woff');
-      font-weight: 800;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-MediumItalic.woff') format('woff');
-      font-weight: 500;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-Regular.woff') format('woff');
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-SemiBold.woff') format('woff');
-      font-weight: 600;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-SemiBoldItalic.woff') format('woff');
-      font-weight: 600;
-      font-style: italic;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-Thin.woff') format('woff');
-      font-weight: 100;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url('/NotoSans-ThinItalic.woff') format('woff');
-      font-weight: 100;
-      font-style: italic;
-    }
-
-    @font-face {
-        font-family: "Pillow Lava";
-        src: url('/Pilowlava-Regular.woff') format('woff');
-        font-weight: 600;
-        font-style: normal;
-    }
-
 </style>
