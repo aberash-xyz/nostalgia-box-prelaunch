@@ -27,8 +27,8 @@
 		</li>
 		<li>
 			<a class="link" on:click={openModal}>
-				<span class="link--text">Join Waitlist</span>
-				<span class="link--text">Join Waitlist</span>
+				<span class="link--text">Waitlist</span>
+				<span class="link--text">Waitlist</span>
 			</a>
 		</li>
 	</ul>
@@ -83,26 +83,15 @@
 			font-size: 2.8rem;
 			padding: 0;
 			list-style: none;
+			gap: 0.8rem;
 		}
 		.link {
-			min-width: 12rem;
+			width: 16rem;
+/*			border-right: solid 1px lightgray;*/
+/*			border-width: 0 1px 0 1px;*/
 		}
 		.link-list {
 /*			gap: 2rem;*/
-		}
-		li {
-			position: absolute;
-		}
-		li:nth-child(1) {
-			left: 10%;
-		}
-		li:nth-child(2) {
-			left: 50%;
-			transform: translateX(-50%);
-		}
-		li:nth-child(3) {
-			left: 90%;
-			transform: translateX(-100%);
 		}
 	}
 </style>
