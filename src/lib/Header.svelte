@@ -1,15 +1,13 @@
 <script>
-	
 	const openModal = () => {
 		let modalBtn = document.querySelector('.open-modal-btn');
 		if (modalBtn) {
 			modalBtn.click();
 		}
-	}
+	};
 
-    import EmailForm from "$lib/EmailForm.svelte"
+	import EmailForm from '$lib/EmailForm.svelte';
 </script>
-
 
 <header class="my-header">
 	<ul class="link-list">
@@ -26,16 +24,27 @@
 			</a>
 		</li>
 		<li>
+			<a class="link" href="/terms">
+				<span class="link--text">T&C's</span>
+				<span class="link--text">T&C's</span>
+			</a>
+		</li>
+		<li>
+			<a class="link" href="/privacy-policy">
+				<span class="link--text">Privacy Policy</span>
+				<span class="link--text">Privacy Policy</span>
+			</a>
+		</li>
+		<li>
 			<a class="link" on:click={openModal}>
-				<span class="link--text">Waitlist</span>
-				<span class="link--text">Waitlist</span>
+				<span class="link--text accent">Waitlist</span>
+				<span class="link--text accent">Waitlist</span>
 			</a>
 		</li>
 	</ul>
 
 	<EmailForm />
 </header>
-
 
 <style>
 	li {
@@ -50,13 +59,15 @@
 		transform: translateX(-50%);
 	}
 	.link-list {
-		font-family: "Ostrich Sans";
+		font-family: 'Ostrich Sans';
 		display: flex;
 		gap: 5rem;
 		font-size: 2rem;
 		flex: 1;
 		align-items: center;
 		justify-content: center;
+		list-style-type: none;
+		margin: 0;
 	}
 	.link {
 		display: block;
@@ -65,6 +76,8 @@
 		cursor: pointer;
 		color: #000;
 		text-decoration: none;
+		min-width: 15rem;
+		text-align: center;
 	}
 	.link--text {
 		display: block;
@@ -74,6 +87,9 @@
 	}
 	.link:hover > .link--text {
 		transform: translateY(-100%);
+	}
+	.accent {
+		color: var(--accent);
 	}
 	@media (max-width: 800px) {
 		.my-header {
@@ -87,11 +103,11 @@
 		}
 		.link {
 			width: 16rem;
-/*			border-right: solid 1px lightgray;*/
-/*			border-width: 0 1px 0 1px;*/
+			/*			border-right: solid 1px lightgray;*/
+			/*			border-width: 0 1px 0 1px;*/
 		}
 		.link-list {
-/*			gap: 2rem;*/
+			/*			gap: 2rem;*/
 		}
 	}
 </style>
