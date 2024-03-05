@@ -57,6 +57,7 @@
 		width: 100%;
 		left: 50%;
 		transform: translateX(-50%);
+		overflow: hidden;
 	}
 	.link-list {
 		font-family: 'Ostrich Sans';
@@ -91,23 +92,30 @@
 	.accent {
 		color: var(--accent);
 	}
+	@media (max-width: 1200px) {
+		.link-list {
+			gap: 2rem;
+			padding: 0;
+		}
+	}
 	@media (max-width: 800px) {
 		.my-header {
 			padding-top: 4.2rem;
+			overflow: hidden;
 		}
 		.link-list {
 			font-size: 2.8rem;
 			padding: 0;
 			list-style: none;
 			gap: 0.8rem;
+			justify-content: space-around;
+			flex-wrap: wrap;
 		}
 		.link {
 			width: 16rem;
+			min-width: 0;
 			/*			border-right: solid 1px lightgray;*/
 			/*			border-width: 0 1px 0 1px;*/
-		}
-		.link-list {
-			/*			gap: 2rem;*/
 		}
 	}
 </style>

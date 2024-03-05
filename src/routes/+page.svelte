@@ -27,48 +27,6 @@
 		position: relative;
 		overflow: hidden;
 	}
-	.grid-container {
-		height: calc(100vh - 20px);
-		margin: 0px;
-		display: grid;
-		grid-template-columns-: repeat(12, 1fr);
-		gap: 10px;
-		overflow: hidden;
-		background: #fffcfc;
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		top: 0px;
-		left: 0px;
-		background: gray;
-	}
-
-	.column1 {
-		padding-top: 4px;
-		padding-left: 8px;
-		position: relative;
-	}
-
-	.form {
-		position: absolute;
-		top: 50px;
-		right: 50px;
-		z-index: 2;
-	}
-
-	.stage {
-		position: relative;
-	}
-
-	.brand {
-		position: absolute;
-		font-family: 'Pillow Lava';
-		font-size: 48px;
-		filter: invert(1);
-		mix-blend-mode: hard-light;
-		right: 12px;
-		transform: translateY(-40%);
-	}
 
 	.hero {
 		width: 100%;
@@ -110,6 +68,19 @@
 		min-width: 15rem;
 		text-align: center;
 	}
+	@media (max-width: 1440px) {
+		.hero {
+			font-size: 14rem;
+			transform: translate(-50%, -80%);
+		}
+	}
+	@media (max-width: 1200px) {
+		.hero {
+			font-size: 10rem;
+			left: 50%;
+			transform: translate(-50%, -60%);
+		}
+	}
 
 	@media (max-width: 800px) {
 		.container {
@@ -117,11 +88,6 @@
 			top: 50%;
 			transform: translateY(-50%);
 		}
-		.brand {
-			mix-blend-mode: difference;
-			font-size: 36px;
-		}
-
 		.hero {
 			height: auto;
 			width: 90%;
@@ -134,36 +100,18 @@
 			overflow-wrap: anywhere;
 		}
 
-		.form {
-			position: absolute;
-			top: 30px;
-			align-self: center;
-			/*            background-color: rgba(255,255,255,0.3);*/
-			right: 50%;
-			transform: translateX(50%);
-			backdrop-filter: blur(20px);
-			border-radius: 20px;
-			padding: 8px;
-			height: auto;
-			overflow: hidden;
-			display: flex;
+		.sub-links {
+			bottom: 60px;
 		}
-
 		.sub {
-			bottom: 30px;
+			bottom: 50px;
 			left: 50%;
-			transform: translateX(-50%);
 		}
 	}
 
 	@media (max-width: 370px) {
 		.hero {
 			font-size: 7rem;
-		}
-
-		.form {
-			right: 50%;
-			transform: translateX(50%);
 		}
 	}
 </style>
