@@ -125,4 +125,10 @@
 	li {
 		font-size: 1.8rem;
 	}
+
+	@media (max-width: 500px) {
+		.container {
+			padding-top: 12.4rem;
+		}
+	}
 </style>
