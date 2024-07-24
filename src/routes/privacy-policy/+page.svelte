@@ -5,9 +5,8 @@
 		<p>Effective date: 3/4/24</p>
 
 		<p>
-			Your privacy is important to us. It is [Your Company Name]'s policy to respect your privacy
-			regarding any information we may collect from you across our website and other sites we own
-			and operate.
+			Your privacy is important to us. It is NostalgiaBox's policy to respect your privacy regarding
+			any information we may collect from you across our website and other sites we own and operate.
 		</p>
 
 		<h2>Information We Collect</h2>
