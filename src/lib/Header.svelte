@@ -60,10 +60,13 @@
 		overflow: hidden;
 	}
 	.link-list {
-		font-family: 'Ostrich Sans';
+		font-family: 'Satoshi';
 		display: flex;
 		gap: 5rem;
-		font-size: 2rem;
+		font-size: 1.5rem;
+		line-height: 2.4rem;
+		letter-spacing: -4%;
+		font-weight: 400;
 		flex: 1;
 		align-items: center;
 		justify-content: center;
@@ -104,7 +107,7 @@
 			overflow: hidden;
 		}
 		.link-list {
-			font-size: 2.8rem;
+			font-size: 1.4rem;
 			padding: 0;
 			list-style: none;
 			gap: 0.8rem;
@@ -114,8 +117,6 @@
 		.link {
 			width: 16rem;
 			min-width: 0;
-			/*			border-right: solid 1px lightgray;*/
-			/*			border-width: 0 1px 0 1px;*/
 		}
 	}
 </style>

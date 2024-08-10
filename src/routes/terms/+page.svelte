@@ -105,7 +105,6 @@
 		padding-top: 10.4rem;
 		width: 100%;
 		height: auto;
-		font-family: 'Ostrich Sans';
 	}
 	.article-main {
 		padding: 2.4rem 3.6rem;

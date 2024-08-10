@@ -55,10 +55,11 @@
 		width: 100%;
 		gap: 8rem;
 		font-weight: normal;
-		font-family: 'Ostrich Sans';
+		font-family: 'Satoshi';
 		font-size: 1.6rem;
 		transform: translateX(-50%);
 		color: rgba(0, 0, 0, 0.6);
+		pointer-events: none;
 	}
 
 	.sub,
