@@ -15,7 +15,16 @@
 
 	<div class="sub-links">
 		<!-- <a class="sub-links__link" href="/terms">Terms and Conditions</a> -->
+		<span style="min-width: 100px;" />
 		<p class="sub">© Aberash. 2024</p>
+		<div>
+			<a href="https://apps.apple.com/us/app/nostalgiabox/id6449536114">
+				<img class="download" src="Download_on_the_App_Store.svg" alt="download on the app store" />
+			</a>
+		</div>
+		<!-- <a href="">
+			<img src="Download_on_Google_Play.png" alt="download on the play store" />
+		</a> -->
 		<!-- <a class="sub-links__link" href="/privacy-policy">Privacy Policy</a> -->
 	</div>
 </div>
@@ -59,9 +68,18 @@
 		font-size: 1.6rem;
 		transform: translateX(-50%);
 		color: rgba(0, 0, 0, 0.6);
-		pointer-events: none;
 	}
 
+	.download {
+		display: block;
+		height: auto;
+		width: 120px;
+		z-index: 999;
+		transition: ease-in-out 0.3s;
+	}
+	.download:hover {
+		transform: scale(1.1);
+	}
 	.sub,
 	.sub-links__link {
 		color: rgba(0, 0, 0, 0.6);
@@ -107,6 +125,9 @@
 		.sub {
 			bottom: 50px;
 			left: 50%;
+		}
+		.download {
+			width: 90px;
 		}
 	}
 
