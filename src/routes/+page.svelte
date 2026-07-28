@@ -16,7 +16,7 @@
 	<div class="sub-links">
 		<!-- <a class="sub-links__link" href="/terms">Terms and Conditions</a> -->
 		<span style="min-width: 100px;" />
-		<p class="sub">© Aberash. 2024</p>
+		<p class="sub">© Aberash. 2026</p>
 		<div>
 			<a href="https://apps.apple.com/us/app/nostalgiabox/id6449536114">
 				<img class="download" src="Download_on_the_App_Store.svg" alt="download on the app store" />
