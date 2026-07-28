@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import VerticalText from '$lib/VerticalText.svelte';
 	import CoverImage from '$lib/CoverImage.svelte';
 	import THREECIRCLE from '$lib/THREECIRCLE.svelte';
@@ -15,7 +15,7 @@
 
 	<div class="sub-links">
 		<!-- <a class="sub-links__link" href="/terms">Terms and Conditions</a> -->
-		<span style="min-width: 100px;" />
+		<span style="min-width: 100px;"></span>
 		<p class="sub">© Aberash. 2026</p>
 		<div>
 			<a href="https://apps.apple.com/us/app/nostalgiabox/id6449536114">

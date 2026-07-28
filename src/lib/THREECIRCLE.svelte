@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import { onMount } from "svelte"
 	import * as THREE from "three"
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'

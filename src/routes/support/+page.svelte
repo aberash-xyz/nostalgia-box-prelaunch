@@ -11,7 +11,7 @@
 				class="support-form__textarea"
 				name="body"
 				placeholder="What can we help you with?"
-			/>
+			></textarea>
 			<input class="support-form__button" type="submit" value="Send" />
 		</form>
 	</article>

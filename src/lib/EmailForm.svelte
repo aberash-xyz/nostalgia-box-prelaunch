@@ -1,4 +1,4 @@
-<script type="module">
+<script>
 	import { enhance } from '$app/forms';
 	import { onMount } from 'svelte';
 	let success = false;
