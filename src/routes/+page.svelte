@@ -5,10 +5,6 @@
 </script>
 
 <div class="container">
-	<!-- <div class="form">
-        <EmailForm />
-    </div> -->
-
 	<h1 class="hero">Nostalgia <br /> Box</h1>
 
 	<THREECIRCLE />

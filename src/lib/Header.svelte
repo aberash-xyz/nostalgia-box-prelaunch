@@ -1,14 +1,3 @@
-<script>
-	const openModal = () => {
-		let modalBtn = document.querySelector('.open-modal-btn');
-		if (modalBtn) {
-			modalBtn.click();
-		}
-	};
-
-	import EmailForm from '$lib/EmailForm.svelte';
-</script>
-
 <header class="my-header">
 	<ul class="link-list">
 		<li>
@@ -35,15 +24,7 @@
 				<span class="link--text">Privacy Policy</span>
 			</a>
 		</li>
-		<li>
-			<a class="link" on:click={openModal}>
-				<span class="link--text accent">Waitlist</span>
-				<span class="link--text accent">Waitlist</span>
-			</a>
-		</li>
 	</ul>
-
-	<EmailForm />
 </header>
 
 <style>
@@ -91,9 +72,6 @@
 	}
 	.link:hover > .link--text {
 		transform: translateY(-100%);
-	}
-	.accent {
-		color: var(--accent);
 	}
 	@media (max-width: 1200px) {
 		.link-list {
