@@ -1,9 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<script>
+			// Scrapbook scale: pieces are authored in design px (1512×982 desktop, 390×844 mobile).
+			(function () {
+				var r = document.documentElement;
+				function f() {
+					var w = innerWidth,
+						h = innerHeight;
+					r.style.setProperty(
+						'--s',
+						w < 720 ? Math.min(w / 390, h / 844) : Math.min(w / 1512, h / 982)
+					);
+				}
+				f();
+				addEventListener('resize', f);
+			})();
+		</script>
 		<script
 			data-host="https://app.microanalytics.io"
 			data-dnt="false"
