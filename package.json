@@ -29,7 +29,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "^6.3.4",
-		"three": "^0.156.1"
+		"@sveltejs/adapter-vercel": "^6.3.4"
 	}
 }

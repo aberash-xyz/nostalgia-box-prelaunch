@@ -114,3 +114,39 @@ body {
 :root {
 	--accent: #e34f26;
 }
+
+/* Scrapbook tokens */
+:root {
+	--paper: #f4eee3;
+	--ink: #151515;
+	--orange: #ea5514;
+	--red: #c8321e;
+	--blue: #1f3a93;
+	--sticky: #ffe97a;
+	--pink: #f2c7c1;
+	--light-blue: #bfd6ee;
+	--kraft: #c69c6d;
+	--yellow: #f2d25c;
+	--paper-shadow: 2px 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* A scrapbook piece: centred on (--x, --y) in design px, scaled by --s (set in app.html). */
+.piece {
+	position: absolute;
+	left: calc(var(--x) * 100% / 1512);
+	top: calc(var(--y) * 100% / 982);
+	translate: -50% -50%;
+	scale: var(--s, 1);
+	rotate: var(--r, 0deg);
+	z-index: 1;
+}
+@media (max-width: 719.98px) {
+	.piece {
+		left: calc(var(--mx, 0) * 100% / 390);
+		top: calc(var(--my, 0) * 100% / 844);
+		scale: calc(var(--s, 1) * var(--ms, 1));
+	}
+	.desktop-only {
+		display: none !important;
+	}
+}
