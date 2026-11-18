@@ -1,8 +1,6 @@
 <script>
 	import Tape from './Tape.svelte';
-
-	const APP_STORE_URL = 'https://apps.apple.com/us/app/nostalgiabox/id6449536114';
-	const PLAY_STORE_URL = ''; // TODO: Google Play listing URL once the Android app is live.
+	import { APP_STORE_URL, PLAY_STORE_URL } from '$lib';
 </script>
 
 <div class="badges">

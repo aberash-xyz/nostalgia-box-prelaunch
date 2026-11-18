@@ -1,12 +1,13 @@
 <script>
 	import { tick } from 'svelte';
+	import { page } from '$app/state';
 	import Tape from './Tape.svelte';
+	import { APP_STORE_URL } from '$lib';
 
-	// TODO: confirm destinations. /why and /support exist today; "the box" and "the app" have no page yet.
 	const cards = [
-		{ n: '01', label: 'the why', href: '/why', bg: '#fff', r: 2 },
-		{ n: '02', label: 'the box', href: '#', bg: 'var(--sticky)', r: -1.5 },
-		{ n: '03', label: 'the app', href: '#', bg: 'var(--light-blue)', r: 1 },
+		{ n: '01', label: 'home', href: '/', bg: '#fff', r: 2 },
+		{ n: '02', label: 'the why', href: '/why', bg: 'var(--sticky)', r: -1.5 },
+		{ n: '03', label: 'the app', href: APP_STORE_URL, bg: 'var(--light-blue)', r: 1 },
 		{ n: '04', label: 'say hi', href: '/support', bg: 'var(--pink)', r: 1.5 }
 	];
 
@@ -54,7 +55,12 @@
 			<ul bind:this={list}>
 				{#each cards as c, i (c.n)}
 					<li style:--i={i} style:rotate="{c.r}deg">
-						<a href={c.href} style:background={c.bg} onclick={() => (open = false)}>
+						<a
+							href={c.href}
+							style:background={c.bg}
+							aria-current={page.url.pathname === c.href ? 'page' : undefined}
+							onclick={() => (open = false)}
+						>
 							<span class="n">{c.n}</span>{c.label}
 						</a>
 					</li>
@@ -136,6 +142,10 @@
 	}
 	a:hover {
 		translate: 6px 0;
+	}
+	a[aria-current='page'] {
+		text-decoration: underline wavy var(--orange) 2px;
+		text-underline-offset: 6px;
 	}
 	.n {
 		font:

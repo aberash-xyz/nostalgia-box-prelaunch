@@ -7,6 +7,8 @@ body {
 	font-size: 62.5%;
 	box-sizing: border-box;
 	font-family: 'Satoshi';
+	background: #f4eee3; /* --paper */
+	color: #151515; /* --ink */
 }
 
 * {

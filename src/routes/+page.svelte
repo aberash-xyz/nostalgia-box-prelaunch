@@ -86,12 +86,6 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-	<link
-		rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bagel+Fat+One&family=Bowlby+One&family=Caveat:wght@400;700&family=Courier+Prime&family=DM+Serif+Display&family=Homemade+Apple&family=Instrument+Serif:ital@1&family=Monoton&family=Permanent+Marker&family=Rubik+Mono+One&family=Special+Elite&family=ZCOOL+KuaiLe&display=swap"
-	/>
 	<link
 		rel="preload"
 		href="/Pilowlava-Regular.woff"
