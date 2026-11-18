@@ -171,6 +171,11 @@
 			translate: -14px -24px;
 		}
 	}
+	@media (max-width: 719.98px) {
+		.hint {
+			display: none;
+		}
+	}
 	@media (prefers-reduced-motion: reduce) {
 		li {
 			animation: none;

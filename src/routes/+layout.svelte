@@ -9,6 +9,20 @@
 <svelte:head>
 	<title>NostalgiaBox</title>
 	<meta name="description" content={content.description} />
+	<!-- Share card (Open Graph / Twitter). Source: Figma "OG image — 1200×630" (7471:78). -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="NostalgiaBox" />
+	<meta property="og:title" content="NostalgiaBox" />
+	<meta property="og:description" content="a box for the moments you'll miss." />
+	<meta property="og:url" content={page.url.origin + page.url.pathname} />
+	<meta property="og:image" content={page.url.origin + '/og.png'} />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta
+		property="og:image:alt"
+		content="NostalgiaBox title in mixed typefaces surrounded by taped polaroids"
+	/>
+	<meta name="twitter:card" content="summary_large_image" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
